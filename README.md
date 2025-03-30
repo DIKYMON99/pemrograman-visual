@@ -44,5 +44,4 @@ class TebakAngka
         Console.WriteLine("Terima kasih telah bermain!");
     }
 }
-
-\\\\\
+\\\\
