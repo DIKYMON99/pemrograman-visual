@@ -1,46 +1,9 @@
 # pemrograman-visual
-using System;
+nama : Diky kristian erlangga
+npm  : 2213020160
 
-TebakAngka
-{
-    static void Main()
-    {
-        Random random = new Random();
-        int angkaRahasia = random.Next(1, 101); // Angka acak antara 1-100
-        int tebakan = 0;
-        int jumlahPercobaan = 0;
+project ini adalah permain untuk menebak angka 1-100
 
-        Console.WriteLine("Selamat datang di Game Tebak Angka!");
-        Console.WriteLine("Saya sudah memilih angka antara 1 hingga 100. Coba tebak!");
-
-        while (tebakan != angkaRahasia)
-        {
-            Console.Write("Masukkan tebakan Anda: ");
-            string input = Console.ReadLine();
-
-            if (int.TryParse(input, out tebakan))
-            {
-                jumlahPercobaan++;
-                
-                if (tebakan < angkaRahasia)
-                {
-                    Console.WriteLine("Terlalu kecil! Coba lagi.");
-                }
-                else if (tebakan > angkaRahasia)
-                {
-                    Console.WriteLine("Terlalu besar! Coba lagi.");
-                }
-                else
-                {
-                    Console.WriteLine($"Selamat! Anda menebak angka {angkaRahasia} dengan {jumlahPercobaan} percobaan.");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Masukkan angka yang valid!");
-            }
-        }
-
-        Console.WriteLine("Terima kasih telah bermain!");
-    }
-}
+cara penggunaan:
+-setelah dijalankan anda disuruh memasukan angka dari 1-100,sistem akan memberitau apakah angka terlalu besar atau kecil sampai menuju angka yang hasus ditebak.
+-jika sudah benar angka yang ditebak juga akan diberitahu berapa kali percobaan sampai menuju angka yang harus ditebak.
