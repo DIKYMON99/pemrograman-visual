@@ -1,7 +1,7 @@
 # pemrograman-visual
 using System;
 
-class TebakAngka
+TebakAngka
 {
     static void Main()
     {
